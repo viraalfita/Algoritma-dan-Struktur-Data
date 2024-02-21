@@ -11,6 +11,8 @@
 
 </div>
 
+<hr>
+
 ## Pertemuan 2 (Object)
 
 ### Percobaan 1
