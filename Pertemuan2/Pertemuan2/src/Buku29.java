@@ -26,4 +26,15 @@ public class Buku29 {
         harga = hrg;
     }
 
+    public Buku29() {
+
+    }
+
+    public Buku29(String jud, String pg, int hal, int stok, int har) {
+        judul = jud;
+        pengarang = pg;
+        halaman = hal;
+        this.stok = stok;
+        harga = har;
+    }
 }

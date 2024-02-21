@@ -70,3 +70,37 @@ Apa nama object yang dihasilkan?</p></strong>
 <strong><p>Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?</p></strong>
 
 <p>Karena di output pertama menampilkan sisa stok terakhir sebelum dikurangi oleh pemanggilan method terjual sejumlah 5 buah sehingga di output kedua menampilkan sisa dari stok yaitu 13 - 5 = 8. Selain itu di output pertama atribut harga di set dengan jumlah 71000, lalu diakibatkan pemanggilan method gantiHarga dengan parameter di set ke 60000, harga yang ditampilkan menjadi 60000  </p>
+
+### Percobaan 3
+
+<p>Kode program</p>
+<img src="gambar/Kode Percobaan 3 A.png">
+<img src="gambar/Kode Percobaan 3 B.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Kode Percobaan 3.png">
+
+#### Pertanyaan
+
+<strong><p>Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
+mendeklarasikan konstruktor berparameter!</p></strong>
+
+<img src="gambar/Percobaan 3 Pertanyaan 1.png">
+
+<strong><p>Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut?</p></strong>
+
+<p>Kode tersebut dilakukan untuk menginstansiasi object bk2 dengan memasukkan langsung parameter-parameter yang dibutuhkan</p>
+
+<strong><p>Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana
+hasilnya? Jelaskan mengapa hasilnya demikian!</p></strong>
+
+<img src="gambar/Hasil Modifikasi No 3.png">
+<p>Hasilnya adalah terdapat error pada instansiasi object bk1, hal ini dikarenakan setelah menambahkan konstruktor khusus pada class (public Buku29(String jud, String pg, int hal, int stok, int har)), Java tidak lagi menyediakan secara otomatis konstruktor default tanpa parameter.</p>
+
+<strong><p>Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses
+secara berurutan? Jelaskan alasannya!</p></strong>
+
+<p>Pemanggilan method pada class tidak harus diakses secara berurutan. Penggunaan method bisa bergantung pada input dari pengguna, kondisi tertentu, atau tahapan eksekusi program.</p>
+
+<strong><p>Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor berparameter dari class Buku!<p></strong>
+
+<img src="gambar/Percobaan 3 Pertanyaan 5.png">
