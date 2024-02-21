@@ -20,8 +20,8 @@ public class BukuMain29 {
         bukuVira.tampilInformasi();
         bukuVira.terjual(1);
 
-        System.out.println("Total Harga : " + bukuVira.hitungHargaTotal());
-        System.out.println("Total Harga : " + bukuVira.hitungDiskon());
-        System.out.println("Total Harga : " + bukuVira.hitungHargaBayar());
+        System.out.println("Total Harga  : " + bukuVira.hitungHargaTotal());
+        System.out.println("Total Diskon : " + bukuVira.hitungDiskon());
+        System.out.println("Total Bayar  : " + bukuVira.hitungHargaBayar());
     }
 }

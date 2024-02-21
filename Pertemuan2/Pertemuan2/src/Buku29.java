@@ -36,9 +36,9 @@ public class Buku29 {
         int hargaTotal = hitungHargaTotal();
         int diskon = 0;
         if (hargaTotal > 150000) {
-            diskon = hargaTotal * (12 / 100);
+            diskon = hargaTotal * 12 / 100;
         } else if (hargaTotal > 75000 && hargaTotal < 150000) {
-            diskon = hargaTotal * (5 / 100);
+            diskon = hargaTotal * 5 / 100;
         } else if (hargaTotal < 75000) {
             diskon = 0;
         } else {
