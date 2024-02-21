@@ -8,12 +8,21 @@
 
 <h2>Pertemuan 2 (Object) </h2>
 
-<h4>Percobaan 1</h4>
+<h3>Percobaan 1</h3>
 <p>Kode program</p>
 <img src="gambar/Kode Percobaan 1.png">
 <p>Hasil ketika dijalankan</p>
 <img src="gambar/Hasil Kode Percobaan 1.png">
 
-<h5>Pertanyaan</h5>
-<strong><p>1. Sebutkan dua karakteristik class atau object!</p></strong>
+<h4>Pertanyaan</h4>
+<strong><p>Sebutkan dua karakteristik class atau object!</p></strong>
 <p>Mempunyai sesuatu dan Melakukan sesuatu</p>
+<strong><p>Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
+Buku? Sebutkan apa saja atributnya</p></strong>
+<ul>
+<li>judul: String</li>
+<li>pengarang: String</li>
+<li>halaman: int</li>
+<li>stok: int</li>
+<li>harga: int</li>
+</ul>
