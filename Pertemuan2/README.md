@@ -112,7 +112,7 @@ secara berurutan? Jelaskan alasannya!</p></strong>
 
 <img src="gambar/Percobaan 3 Pertanyaan 5.png">
 
-### Percobaan 2
+### Latihan Praktikum
 
 <p>Kode program</p>
 <img src="gambar/Kode Latihan 1.png">
