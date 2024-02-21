@@ -1,4 +1,4 @@
-:center: # Algoritma dan Struktur Data :center:
+# Algoritma dan Struktur Data
 
 <img src="https://static.wikia.nocookie.net/logopedia/images/8/8a/Politeknik_Negeri_Malang.png/revision/latest?cb=20190922202558" alt="Gambar" style="height: 200px">
 
@@ -49,7 +49,7 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
 <p>Metode restock(int jml) memiliki satu parameter berupa bilangan integer karena metode ini bertujuan untuk menambah jumlah stok buku yang ada. Parameter jml ini mewakili jumlah buku yang akan ditambahkan ke stok. </p>
 
-### Percobaan 1
+### Percobaan 2
 
 <p>Kode program</p>
 <img src="gambar/Kode Percobaan 2.png">
@@ -58,4 +58,15 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
 #### Pertanyaan
 
-<strong><p></p></strong>
+<strong><p>Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi!
+Apa nama object yang dihasilkan?</p></strong>
+
+<p>bk1</p>
+
+<strong><p>Bagaimana cara mengakses atribut dan method dari suatu objek?</p></strong>
+
+<p>Dengan menambahkan titik di belakang nama object, lalu pilih atribut atau method yang akan diakses</p>
+
+<strong><p>Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?</p></strong>
+
+<p>Karena di output pertama menampilkan sisa stok terakhir sebelum dikurangi oleh pemanggilan method terjual sejumlah 5 buah sehingga di output kedua menampilkan sisa dari stok yaitu 13 - 5 = 8. Selain itu di output pertama atribut harga di set dengan jumlah 71000, lalu diakibatkan pemanggilan method gantiHarga dengan parameter di set ke 60000, harga yang ditampilkan menjadi 60000  </p>
