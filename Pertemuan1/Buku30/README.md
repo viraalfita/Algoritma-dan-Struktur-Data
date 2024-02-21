@@ -6,8 +6,14 @@
 <p>Kelas    : TI-1B</p>
 <p>No       : 29</p>
 
-<br>
-<hr>
-<br>
-
 <h2>Pertemuan 2 (Object) </h2>
+
+<h4>Percobaan 1</h4>
+<p>Kode program</p>
+<img src="gambar/Kode Percobaan 1.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Kode Percobaan 1.png">
+
+<h5>Pertanyaan</h5>
+<strong><p>1. Sebutkan dua karakteristik class atau object!</p></strong>
+<p>Mempunyai sesuatu dan Melakukan sesuatu</p>
