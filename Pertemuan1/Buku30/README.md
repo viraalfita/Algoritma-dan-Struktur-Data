@@ -19,7 +19,7 @@
 
 <strong><p>Sebutkan dua karakteristik class atau object!</p></strong>
 
-##### Mempunyai sesuatu dan Melakukan sesuatu
+<p> Mempunyai sesuatu dan Melakukan sesuatu </p>
 
 <strong><p>Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
 Buku? Sebutkan apa saja atributnya</p></strong>
@@ -47,4 +47,4 @@ sehingga proses pengurangan hanya dapat dilakukan jika stok masih ada (lebih bes
 
 <strong><p>Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?</p></strong>
 
-##### Metode restock(int jml) memiliki satu parameter berupa bilangan integer karena metode ini bertujuan untuk menambah jumlah stok buku yang ada. Parameter jml ini mewakili jumlah buku yang akan ditambahkan ke stok.
+<p>Metode restock(int jml) memiliki satu parameter berupa bilangan integer karena metode ini bertujuan untuk menambah jumlah stok buku yang ada. Parameter jml ini mewakili jumlah buku yang akan ditambahkan ke stok. </p>
