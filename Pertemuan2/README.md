@@ -111,3 +111,10 @@ secara berurutan? Jelaskan alasannya!</p></strong>
 <strong><p>Buat object baru dengan nama buku<NamaMahasiswa> menggunakan konstruktor berparameter dari class Buku!<p></strong>
 
 <img src="gambar/Percobaan 3 Pertanyaan 5.png">
+
+### Percobaan 2
+
+<p>Kode program</p>
+<img src="gambar/Kode Latihan 1.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Kode latihan 1.png">

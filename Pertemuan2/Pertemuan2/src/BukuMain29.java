@@ -16,7 +16,12 @@ public class BukuMain29 {
         bk2.terjual(11);
         bk2.tampilInformasi();
 
-        Buku29 bukuVira = new Buku29("Habis Gelap Terbitlah Terang", "RA Kartini", 352, 14, 20000);
+        Buku29 bukuVira = new Buku29("Habis Gelap Terbitlah Terang", "RA Kartini", 352, 14, 170000);
         bukuVira.tampilInformasi();
+        bukuVira.terjual(1);
+
+        System.out.println("Total Harga : " + bukuVira.hitungHargaTotal());
+        System.out.println("Total Harga : " + bukuVira.hitungDiskon());
+        System.out.println("Total Harga : " + bukuVira.hitungHargaBayar());
     }
 }
