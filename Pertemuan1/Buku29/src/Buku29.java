@@ -1,4 +1,4 @@
-public class Buku30 {
+public class Buku29 {
     String judul, pengarang;
     int halaman, stok, harga;
 
@@ -19,6 +19,7 @@ public class Buku30 {
         } else {
             System.out.println("Stok habis");
         }
+        stok -= jml;
     }
 
     void restock(int jml) {
