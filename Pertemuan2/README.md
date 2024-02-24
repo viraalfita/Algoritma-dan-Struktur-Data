@@ -122,4 +122,7 @@ secara berurutan? Jelaskan alasannya!</p></strong>
 ### Latihan Praktikum 2
 
 <p>Kode program</p>
+<img src="gambar/Kode Latihan 2.png">
+<img src="gambar/Kode Latihan 2 Main.png">
 <p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Kode latihan 2.png">
