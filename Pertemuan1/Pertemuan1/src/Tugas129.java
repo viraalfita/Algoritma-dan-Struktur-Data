@@ -30,5 +30,7 @@ public class Tugas129 {
         for (int i = 0; i < KOTA[index].length; i++) {
             System.out.print(KOTA[index][i]);
         }
+
+        scan29.close();
     }
 }

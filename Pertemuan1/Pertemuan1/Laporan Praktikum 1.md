@@ -36,6 +36,13 @@
 <p>Hasil ketika dijalankan</p>
 <img src="gambar/Hasil Kode 3.png">
 
+### Percobaan 4
+
+<p>Kode program</p>
+<img src="gambar/Kode Percobaan 4.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Kode 4.png">
+
 ### Tugas 1
 
 <p>Kode program</p>

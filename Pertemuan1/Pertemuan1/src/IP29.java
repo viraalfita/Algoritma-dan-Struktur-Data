@@ -72,5 +72,8 @@ public class IP29 {
         }
 
         System.out.println("IP : " + (nilaiTotal / totalSks));
+
+        scan29.close();
+
     }
 }

@@ -45,6 +45,8 @@ public class Nilai29 {
             System.out.println("Nilai anda tidak valid");
         }
 
+        scan29.close();
+
     }
 
     public static boolean isNilaiValid(double nilai) {
