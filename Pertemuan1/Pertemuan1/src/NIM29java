@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class NIM29 {
+    public static void main(String[] args) {
+        Scanner scan29 = new Scanner(System.in);
+
+        System.out.print("Masukkan NIM: ");
+        String nim = scan29.nextLine();
+        String duaDigit = nim.substring(nim.length() - 2);
+        int digitTerakhir = Integer.parseInt(duaDigit);
+        if (digitTerakhir < 10) {
+            digitTerakhir += 10;
+        }
+        System.out.println("n = " + digitTerakhir);
+        tampilkanNim(digitTerakhir);
+
+    }
+
+    static void tampilkanNim(int digitTerakhir) {
+        for (int i = 1; i <= digitTerakhir; i++) {
+            if (i % 2 != 0) {
+                System.out.print("* ");
+            } else {
+                if (i == 6 || i == 10) {
+                    continue;
+                }
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
