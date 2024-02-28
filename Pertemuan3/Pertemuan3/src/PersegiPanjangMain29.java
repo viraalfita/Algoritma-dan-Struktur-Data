@@ -3,9 +3,13 @@ import java.util.Scanner;
 public class PersegiPanjangMain29 {
     public static void main(String[] args) {
         Scanner scan29 = new Scanner(System.in);
-        PersegiPanjang29[] ppArray29 = new PersegiPanjang29[3];
 
-        for (int i = 0; i < ppArray29.length; i++) {
+        System.out.print("Masukkan jumlah persegi panjang: ");
+        int length = scan29.nextInt();
+
+        PersegiPanjang29[] ppArray29 = new PersegiPanjang29[length];
+
+        for (int i = 0; i < length; i++) {
             ppArray29[i] = new PersegiPanjang29();
             System.out.println("Persegi Panjang ke-" + i);
             System.out.print("Masukkan panjang  : ");
