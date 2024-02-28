@@ -120,4 +120,4 @@ pada ppArray[i] sekaligus ppArray[0]?Jelaskan !<p></strong>
 <img src="gambar/Latihan Praktikum 2.png">
 <img src="gambar/Latihan Praktikum 2.png">
 <p>Hasil ketika dijalankan</p>
-<img src="gambar/Hasil Latihan Praktikum 2.png">
+<img src="gambar/Hasil 2.png">
