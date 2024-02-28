@@ -82,7 +82,7 @@ dibawah ini akan memunculkan error saat dijalankan. Mengapa?<p></strong>
 <strong><p>Apakah boleh Jika terjadi duplikasi instansiasi array of objek, misalkan saja instansiasi dilakukan
 pada ppArray[i] sekaligus ppArray[0]?Jelaskan !<p></strong>
 
-<p>Boleh, tidak ada aturan yang melarang duplikasi instansiasi array of objek pada indeks yang sama atau berbeda. Dengan kata lain, Anda dapat menginisialisasi elemen-elemen array dengan objek yang sama pada indeks yang sama tanpa masalah sintaks.</p>
+<p>Boleh, tidak ada aturan yang melarang duplikasi instansiasi array of objek pada indeks yang sama atau berbeda. Dengan kata lain, kita dapat menginisialisasi elemen-elemen array dengan objek yang sama pada indeks yang sama tanpa masalah sintaks.</p>
 
 ### Percobaan 3
 
@@ -103,3 +103,21 @@ pada ppArray[i] sekaligus ppArray[0]?Jelaskan !<p></strong>
 
 <img src="gambar/Segitiga.png">
 <img src="gambar/Hasil Segitiga.png">
+
+### Latihan Praktikum 1
+
+<p>Kode program</p>
+<img src="gambar/Latihan Praktikum 1.png">
+<img src="gambar/Kerucut.png">
+<img src="gambar/Limas Segiempat.png">
+<img src="gambar/Bola.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Latihan Praktikum 1.png">
+
+### Latihan Praktikum 2
+
+<p>Kode program</p>
+<img src="gambar/Latihan Praktikum 2.png">
+<img src="gambar/Latihan Praktikum 2.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Latihan Praktikum 2.png">
