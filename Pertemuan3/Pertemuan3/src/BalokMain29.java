@@ -9,5 +9,6 @@ public class BalokMain29 {
         for (int i = 0; i < blArray.length; i++) {
             System.out.println("Volume Balok ke-" + i + ": " + blArray[i].hitungVolume());
         }
+
     }
 }
