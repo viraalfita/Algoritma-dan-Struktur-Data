@@ -20,4 +20,9 @@ public class Pangkat29 {
             }
         }
     }
+
+    // public Pangkat29(int n, int p) {
+    // nilai = n;
+    // pangkat = p;
+    // }
 }
