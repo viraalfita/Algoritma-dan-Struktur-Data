@@ -99,9 +99,9 @@ perusahaan.(Setiap perusahaan bisa saja memiliki jumlah bulan berbeda-beda)? Buk
 dengan program!<p></strong>
 
 <p>Hasil Modifikasi</p>
-<img src="gambar/Modifikasi 3">
-<img src="gambar/Modifikasi 3 (1)">
-<img src="gambar/Hasil Modifikasi 3">
+<img src="gambar/Modifikasi 3.png">
+<img src="gambar/Modifikasi 3 (1).png">
+<img src="gambar/Hasil Modifikasi 3.png">
 
 ### Latihan Praktikum
 
