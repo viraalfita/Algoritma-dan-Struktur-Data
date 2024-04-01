@@ -44,3 +44,62 @@ tersebut pada class BukuMain seperti gambar berikut <p></strong>
 <img src="gambar/Pertanyaan 3 2.png">
 
 ### Percobaan Sequential Search
+
+<p>Kode program</p>
+<img src="gambar/Buku.png">
+<img src="gambar/Pencarian Buku 2.png">
+<img src="gambar/Buku Main 2.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Percobaan 2.png">
+
+#### Pertanyaan
+
+<strong><p>Tunjukkan pada kode program yang mana proses divide dijalankan!<p></strong>
+<img src="gambar/Divide.png">
+
+<strong><p>Tunjukkan pada kode program yang mana proses conquer dijalankan!<p></strong>
+<img src="gambar/Conquere.png">
+
+<strong><p>Jika data Kode Buku yang dimasukkan tidak urut. Apakah program masih dapat berjalan? Mengapa
+demikian! Tunjukkan hasil screenshoot untuk bukti dengan kode Buku yang acak. Jelaskan
+Mengapa hal tersebut bisa terjadi?<p></strong>
+
+<p>Sequential search akan berjalan, namun untuk binary search terjadi error</p>
+<img src="gambar/Pertanyaan Binary.png">
+<p>Hal ini dikarenakan kode buku yang dimasukkan tidak terurut sehingga program tidak bisa mencari data yang sesuai dengan binary search.</p>
+
+<strong><p>Jika Kode Buku yang dimasukkan dari Kode Buku terbesar ke terkecil (missal : 20215, 20214,
+20212, 20211, 20210) dan elemen yang dicari adalah 20210. Bagaimana hasil dari binary search?
+Apakah sesuai? Jika tidak sesuai maka ubahlah kode program binary seach agar hasilnya sesuai!<p></strong>
+
+<p>Tidak sesuai, berikut adalah perubahan kodenya</p>
+<img src="gambar/Pertanyaan Binary.png">
+<p>Hal ini dikarenakan kode buku yang dimasukkan tidak terurut sehingga program tidak bisa mencari data yang sesuai dengan binary search.</p>
+
+### Percobaan Merge Sort
+
+<p>Kode program</p>
+<img src="gambar/Merge Sort.png">
+<img src="gambar/Merge Sort Main.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Merge Sort.png">
+
+### Latihan Praktikum
+
+#### No. 1
+
+<p>Kode program</p>
+<img src="gambar/Latihan Praktikum 1.png">
+<img src="gambar/Latihan Praktikum 1 2.png">
+<img src="gambar/Latihan Praktikum 1 3.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Latihan Praktikum 1.png">
+
+#### No. 2
+
+<p>Kode program</p>
+<img src="gambar/Latihan Praktikum 2 1.png">
+<img src="gambar/Latihan Praktikum 2 2.png">
+<img src="gambar/Latihan Praktikum 2 3.png">
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Latihan Praktikum 2.png">
