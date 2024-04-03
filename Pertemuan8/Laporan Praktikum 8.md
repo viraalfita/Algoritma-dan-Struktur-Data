@@ -31,6 +31,7 @@ public class Barang29 {
     }
 
 }
+``
 
 <p>Gudang29.java<p>
 ```java
