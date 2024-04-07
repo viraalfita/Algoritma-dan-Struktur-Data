@@ -39,6 +39,7 @@ public class Gudang29 {
             Barang29 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari Gudang.");
+            System.out.println("Kode unik dalam biner: " + konversiDesimalKeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tumpukan barang kosong.");
@@ -62,6 +63,49 @@ public class Gudang29 {
         for (int i = top; i >= 0; i--) {
             System.out.printf("Kode %d: %s (Kategori %s)\n", tumpukan[i].kode, tumpukan[i].nama,
                     tumpukan[i].kategori);
+        }
+    }
+
+    public String konversiDesimalKeBiner(int kode) {
+        StackKonversi29 stack = new StackKonversi29();
+        while (kode != 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+
+    public Barang29 lihatBarangTerbawah() {
+        if (!cekKosong()) {
+            Barang29 barangTerbawah = tumpukan[0];
+            System.out.println("Barang terbawah: " + barangTerbawah.nama);
+            return barangTerbawah;
+        } else {
+            System.out.println("Tumpukan barang kosong.");
+            return null;
+        }
+    }
+
+    public void cariBarang(String kataKunci) {
+        boolean ditemukan = false;
+        if (!cekKosong()) {
+            for (int i = 0; i <= top; i++) {
+                if (tumpukan[i].nama.equalsIgnoreCase(kataKunci) || tumpukan[i].kode == Integer.parseInt(kataKunci)) {
+                    System.out.println("Barang ditemukan:");
+                    System.out.printf("Kode: %d, Nama: %s, Kategori: %s\n", tumpukan[i].kode, tumpukan[i].nama,
+                            tumpukan[i].kategori);
+                    ditemukan = true;
+                    break;
+                }
+            }
+        }
+        if (!ditemukan) {
+            System.out.println("Barang tidak ditemukan");
         }
     }
 }
