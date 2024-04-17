@@ -60,9 +60,9 @@ public class ProsesAngka29 {
             if (cari == angka29.angka[mid]) {
                 return (mid);
             } else if (angka29.angka[mid] > cari) {
-                return cariAngkaAscending(cari, left, mid);
+                return cariAngkaAscending(cari, left, mid - 1);
             } else {
-                return cariAngkaAscending(cari, mid, right);
+                return cariAngkaAscending(cari, mid + 1, right);
             }
         }
         return -1;
@@ -75,10 +75,10 @@ public class ProsesAngka29 {
             mid = (right + left) / 2;
             if (cari == angka29.angka[mid]) {
                 return (mid);
-            } else if (angka29.angka[mid] > cari) {
-                return cariAngkaDescending(cari, left, mid);
+            } else if (angka29.angka[mid] < cari) {
+                return cariAngkaDescending(cari, left, mid - 1);
             } else {
-                return cariAngkaDescending(cari, mid, right);
+                return cariAngkaDescending(cari, mid + 1, right);
             }
         }
         return -1;
@@ -88,7 +88,7 @@ public class ProsesAngka29 {
         if (posisi != -1) {
             System.out.println("Data: " + x + " ditemukan pada indeks ke-" + posisi);
         } else {
-            System.out.println("Data " + x + "tidak ditemukan!");
+            System.out.println("Data " + x + " tidak ditemukan!");
         }
     }
 }

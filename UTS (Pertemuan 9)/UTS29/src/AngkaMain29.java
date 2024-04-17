@@ -21,11 +21,11 @@ public class AngkaMain29 {
         int cari = scan29.nextInt();
 
         int posisi = data.cariAngka(cari, 0, 16);
-        System.out.print("Sebelum diurutkan: ");
+        System.out.println("Sebelum diurutkan: ");
         data.tampilPosisi(cari, posisi);
 
         int posisiAsc = data.cariAngkaAscending(cari, 0, 16);
-        System.out.print("Ascending: ");
+        System.out.println("Ascending: ");
         data.tampilPosisi(cari, posisiAsc);
 
         int posisiDesc = data.cariAngkaDescending(cari, 0, 16);
