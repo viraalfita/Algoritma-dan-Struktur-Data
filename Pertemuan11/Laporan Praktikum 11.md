@@ -393,3 +393,264 @@
 <strong><p>Jelaskan kegunaan kode dibawah pada method remove<p></strong>
 
 <p>Kode di atas digunakan untuk menghapus node dari linked list jika node tersebut memiliki nilai data yang sama dengan key</p>
+
+### Tugas No. 1
+
+<p>Kode program</p>
+<p>NodeMhs.java</p>
+
+    package Pertemuan11.Tugas1.src;
+
+    public class NodeMhs {
+        int nim;
+        String nama;
+        NodeMhs next;
+
+        public NodeMhs(int nim, String nama) {
+            this.nim = nim;
+            this.nama = nama;
+            this.next = null;
+        }
+
+    }
+
+<p>SLLMhs.java</p>
+
+    package Pertemuan11.Tugas1.src;
+
+    public class SLLMhs {
+        NodeMhs head, tail;
+
+        boolean isEmpty() {
+            return head == null;
+        }
+
+        void print() {
+            if (!isEmpty()) {
+                System.out.println("Isi Linked List: ");
+                NodeMhs temp = head;
+                while (temp != null) {
+                    System.out.println(temp.nim + " " + temp.nama);
+                    temp = temp.next;
+                }
+            } else {
+                System.out.println("Linked List Kosong");
+            }
+        }
+
+        void addFirst(int nim, String nama) {
+            NodeMhs ndInput = new NodeMhs(nim, nama);
+            if (isEmpty()) {
+                head = ndInput;
+                tail = ndInput;
+            } else {
+                ndInput.next = head;
+                head = ndInput;
+            }
+        }
+
+        void insertAfter(int key, int nim, String nama) {
+            NodeMhs ndInput = new NodeMhs(nim, nama);
+            NodeMhs temp = head;
+            while (temp != null && temp.nim != key) {
+                temp = temp.next;
+            }
+            if (temp != null) {
+                ndInput.next = temp.next;
+                temp.next = ndInput;
+                if (temp == tail) {
+                    tail = ndInput;
+                }
+            } else {
+                System.out.println("Node dengan kunci " + key + " tidak ditemukan");
+            }
+        }
+
+        void insertAt(int index, int nim, String nama) {
+            NodeMhs ndInput = new NodeMhs(nim, nama);
+            if (index < 0) {
+                System.out.println("Indeks tidak valid");
+                return;
+            }
+            if (index == 0) {
+                addFirst(nim, nama);
+            } else {
+                NodeMhs temp = head;
+                int count = 0;
+                while (temp != null && count < index - 1) {
+                    temp = temp.next;
+                    count++;
+                }
+                if (temp != null) {
+                    ndInput.next = temp.next;
+                    temp.next = ndInput;
+                    if (temp == tail) {
+                        tail = ndInput;
+                    }
+                } else {
+                    System.out.println("Indeks melebihi jumlah node");
+                }
+            }
+        }
+
+        void addLast(int nim, String nama) {
+            NodeMhs ndInput = new NodeMhs(nim, nama);
+            if (isEmpty()) {
+                head = ndInput;
+                tail = ndInput;
+            } else {
+                tail.next = ndInput;
+                tail = ndInput;
+            }
+        }
+    }
+
+<p>Main.java</p>
+
+    package Pertemuan11.Tugas1.src;
+
+    public class Main {
+        public static void main(String[] args) {
+            SLLMhs linkedList = new SLLMhs();
+
+            linkedList.addFirst(111, "Anton");
+
+            linkedList.addLast(115, "Sari");
+
+            linkedList.print();
+
+            linkedList.insertAfter(111, 112, "Prita");
+
+            linkedList.print();
+
+            linkedList.insertAt(2, 113, "Yusuf");
+
+            linkedList.print();
+
+            linkedList.insertAfter(113, 114, "Doni");
+
+            linkedList.print();
+
+            linkedList.print();
+        }
+    }
+
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Tugas 1.png">
+
+### Tugas 2
+
+<p>Kode program</p>
+<p>NodeMhs.java</p>
+
+    package Pertemuan11.Tugas2.src;
+
+    public class NodeMhs {
+        int nim;
+        String nama;
+        NodeMhs next;
+
+        public NodeMhs(int nim, String nama) {
+            this.nim = nim;
+            this.nama = nama;
+            this.next = null;
+        }
+    }
+
+<p>LinkedListMhs.java</p>
+
+    package Pertemuan11.Tugas2.src;
+
+    public class LinkedListMhs {
+        NodeMhs head, tail;
+
+        boolean isEmpty() {
+            return head == null;
+        }
+
+        void addLast(int nim, String nama) {
+            NodeMhs newNode = new NodeMhs(nim, nama);
+            if (isEmpty()) {
+                head = tail = newNode;
+            } else {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
+
+        void displayList() {
+            if (isEmpty()) {
+                System.out.println("Linked list kosong");
+            } else {
+                System.out.println("Isi linked list:");
+                NodeMhs current = head;
+                while (current != null) {
+                    System.out.println(current.nim + " " + current.nama);
+                    current = current.next;
+                }
+            }
+        }
+    }
+
+<p>QueueMhs.java</p>
+
+    package Pertemuan11.Tugas2.src;
+
+    public class QueueMhs {
+        LinkedListMhs queueList = new LinkedListMhs();
+
+        void enqueue(int nim, String nama) {
+            queueList.addLast(nim, nama);
+        }
+
+        void dequeue() {
+            if (queueList.isEmpty()) {
+                System.out.println("Antrian kosong");
+            } else {
+                System.out.println("Mahasiswa yang dilayani: " + queueList.head.nim + " " + queueList.head.nama);
+                queueList.head = queueList.head.next;
+                if (queueList.head == null) {
+                    queueList.tail = null;
+                }
+            }
+        }
+
+        void displayQueue() {
+            queueList.displayList();
+        }
+    }
+
+<p>MhsMain.java</p>
+
+    package Pertemuan11.Tugas2.src;
+
+    public class MhsMain {
+        public static void main(String[] args) {
+            QueueMhs antrian = new QueueMhs();
+
+            antrian.enqueue(101, "Vira");
+            antrian.enqueue(102, "Rio");
+            antrian.enqueue(103, "Taufik");
+
+            System.out.println("Antrian awal:");
+            antrian.displayQueue();
+
+            antrian.dequeue();
+
+            System.out.println("Antrian setelah pemanggilan pertama:");
+            antrian.displayQueue();
+
+            antrian.enqueue(104, "Vincent");
+
+            System.out.println("Antrian setelah penambahan:");
+            antrian.displayQueue();
+
+            antrian.dequeue();
+
+            System.out.println("Antrian setelah pemanggilan kedua:");
+            antrian.displayQueue();
+        }
+    }
+
+<p>Hasil ketika dijalankan</p>
+<img src="gambar/Hasil Tugas 2.png">
