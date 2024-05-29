@@ -3,25 +3,25 @@ package Pertemuan12.Percobaan1.src;
 public class DoubleLinkedListsMain29 {
     public static void main(String[] args) throws Exception {
         DoubleLinkedLists29 dll = new DoubleLinkedLists29();
-        // dll.print();
-        // System.out.println("Size: " + dll.size);
-        // System.out.println("=============================");
+        dll.print();
+        System.out.println("Size: " + dll.size);
+        System.out.println("=============================");
 
-        // dll.addFirst(3);
-        // dll.addLast(7);
-        // dll.print();
-        // System.out.println("Size: " + dll.size);
-        // System.out.println("=============================");
+        dll.addFirst(3);
+        dll.addLast(7);
+        dll.print();
+        System.out.println("Size: " + dll.size);
+        System.out.println("=============================");
 
-        // dll.add(40, 1);
-        // dll.print();
-        // System.out.println("Size: " + dll.size);
-        // System.out.println("=============================");
+        dll.add(40, 1);
+        dll.print();
+        System.out.println("Size: " + dll.size);
+        System.out.println("=============================");
 
-        // dll.clear();
-        // dll.print();
-        // System.out.println("Size: " + dll.size);
-        // System.out.println("=============================");
+        dll.clear();
+        dll.print();
+        System.out.println("Size: " + dll.size);
+        System.out.println("=============================");
 
         // dll.addLast(50);
         // dll.addLast(40);

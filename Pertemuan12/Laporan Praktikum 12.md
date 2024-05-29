@@ -387,3 +387,183 @@ head.prev = null;<p></strong>
 <strong><p>Jelaskan cara mengatur indeks pada double linked lists supaya dapat dimulai dari indeks ke-1<p></strong>
 
 <p>Kita dapat memodifikasi pengaksesan dan penghapusan elemen dalam doubly linked list menggunakan indeks yang dimulai dari 1 (bukan 0). Ini dilakukan dengan menyesuaikan perhitungan indeks saat menelusuri list dan memastikan indeks berada dalam batas yang valid.</p>
+
+### Tugas 1 (Antrian Vaksin)
+
+<p>Kode program</p>
+<p>Node29.java</p>
+
+    public class Node29 {
+        int nomorAntrian;
+        String namaPenerima;
+        Node29 next, prev;
+
+        public Node29(Node29 prev, int nomorAntrian, String namaPenerima, Node29 next) {
+            this.prev = prev;
+            this.nomorAntrian = nomorAntrian;
+            this.namaPenerima = namaPenerima;
+            this.next = next;
+        }
+    }
+
+<p>AntrianVaksin29.java</p>
+
+    public class AntrianVaksin29 {
+        Node29 head;
+        int size;
+
+        public AntrianVaksin29() {
+            head = null;
+            size = 0;
+        }
+
+        public boolean isEmpty() {
+            return head == null;
+        }
+
+        public void addFirst(int nomorAntrian, String namaPenerima) {
+            if (isEmpty()) {
+                head = new Node29(null, nomorAntrian, namaPenerima, null);
+            } else {
+                Node29 newNode = new Node29(null, nomorAntrian, namaPenerima, head);
+                head.prev = newNode;
+                head = newNode;
+            }
+            size++;
+        }
+
+        public void addLast(int nomorAntrian, String namaPenerima) {
+            if (isEmpty()) {
+                addFirst(nomorAntrian, namaPenerima);
+            } else {
+                Node29 current = head;
+                while (current.next != null) {
+                    current = current.next;
+                }
+                Node29 newNode = new Node29(current, nomorAntrian, namaPenerima, null);
+                current.next = newNode;
+                size++;
+            }
+        }
+
+        public void removeFirst() throws Exception {
+            if (isEmpty()) {
+                throw new Exception("Antrian kosong");
+            } else if (size == 1) {
+                System.out.println(head.namaPenerima + " telah selesai divaksinasi.");
+                removeLast();
+            } else {
+                System.out.println(head.namaPenerima + " telah selesai divaksinasi.");
+                head = head.next;
+                head.prev = null;
+                size--;
+            }
+        }
+
+        public void removeLast() throws Exception {
+            if (isEmpty()) {
+                throw new Exception("Antrian kosong");
+            } else if (head.next == null) {
+                System.out.println(head.namaPenerima + " telah selesai divaksinasi.");
+                head = null;
+                size--;
+                return;
+            } else {
+                Node29 current = head;
+                while (current.next.next != null) {
+                    current = current.next;
+                }
+                System.out.println(current.namaPenerima + " telah selesai divaksinasi.");
+                current.next = null;
+                size--;
+            }
+        }
+
+        public void print() {
+            if (isEmpty()) {
+                System.out.println("Antrian kosong");
+            } else {
+                Node29 current = head;
+                System.out.println("+----------------------------+");
+                System.out.println("|   Daftar Pengantri Vaksin  |");
+                System.out.println("+----------------------------+");
+                System.out.println("| No Antrian | Nama Penerima |");
+                System.out.println("+------------+---------------+");
+                while (current != null) {
+                    System.out.printf("| %-10d | %-13s |\n", current.nomorAntrian, current.namaPenerima);
+                    current = current.next;
+                }
+                System.out.println("+------------+---------------+");
+            }
+        }
+
+    }
+
+<p>AntrianVaksin29.java</p>
+
+    import java.util.Scanner;
+
+    public class AntrianVaksinMain29 {
+        public static void main(String[] args) throws Exception {
+            AntrianVaksin29 antrian = new AntrianVaksin29();
+            Scanner scanner = new Scanner(System.in);
+            int pilihan;
+
+            do {
+                System.out.println("\n+++++++++++++++++++++++++++++");
+                System.out.println("PENGANTRI VAKSIN EXTRAVAGANZA");
+                System.out.println("+++++++++++++++++++++++++++++");
+                System.out.println("1. Tambah Data Penerima Vaksin");
+                System.out.println("2. Hapus Data Pengantri Vaksin");
+                System.out.println("3. Daftar Penerima Vaksin");
+                System.out.println("4. Keluar");
+                System.out.println("+++++++++++++++++++++++++++++");
+                System.out.print("Pilih menu: ");
+                pilihan = scanner.nextInt();
+                scanner.nextLine();
+
+                switch (pilihan) {
+                    case 1:
+                        System.out.println("+-------------------------------+");
+                        System.out.println("| Masukkan Data Penerima Vaksin |");
+                        System.out.println("+-------------------------------+");
+                        System.out.print("Masukkan Nomor Antrian: ");
+                        int nomorAntrian = scanner.nextInt();
+                        scanner.nextLine();
+                        System.out.print("Masukkan Nama Penerima: ");
+                        String namaPenerima = scanner.nextLine();
+                        antrian.addLast(nomorAntrian, namaPenerima);
+                        break;
+                    case 2:
+                        antrian.removeFirst();
+                        break;
+                    case 3:
+                        antrian.print();
+                        System.out.println("Sisa Antrian: " + antrian.size);
+                        break;
+                    case 4:
+                        System.out.println("Keluar dari program.");
+                        break;
+                    default:
+                        System.out.println("Pilihan tidak valid.");
+                        break;
+                }
+            } while (pilihan != 4);
+
+            scanner.close();
+        }
+    }
+
+<p>Hasil ketika dijalankan</p>
+
+<p>Menu (Tambah Data Penerima Vaksin)</p>
+<img src="gambar/Tambah Data.png">
+
+<p>Menu (Hapus Data Pengantri Vaksin)</p>
+<img src="gambar/Hapus.png">
+
+<p>Menu (Daftar Penerima Vaksin)</p>
+<img src="gambar/Daftar.png">
+
+<p>Menu (Keluar)</p>
+<img src="gambar/Keluar.png">
