@@ -1,3 +1,5 @@
+package Pertemuan12.AntrianVaksin.src;
+
 import java.util.Scanner;
 
 public class AntrianVaksinMain29 {

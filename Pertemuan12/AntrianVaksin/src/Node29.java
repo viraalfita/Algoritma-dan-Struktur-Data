@@ -1,3 +1,5 @@
+package Pertemuan12.AntrianVaksin.src;
+
 public class Node29 {
     int nomorAntrian;
     String namaPenerima;
